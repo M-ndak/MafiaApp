@@ -1,0 +1,118 @@
+{
+  "roles": [
+    {
+      "id": "uday_bhai",
+      "name": "Uday Bhai",
+      "team": "mafia",
+      "description": "One of the Mafia. Wakes at night with the other Mafia to choose a victim."
+    },
+    {
+      "id": "abrar",
+      "name": "Abrar",
+      "team": "mafia",
+      "description": "One of the Mafia. Wakes at night with the other Mafia to choose a victim."
+    },
+    {
+      "id": "baa",
+      "name": "Baa",
+      "team": "mafia",
+      "description": "One of the Mafia. Wakes at night with the other Mafia to choose a victim."
+    },
+    {
+      "id": "surya",
+      "name": "Surya",
+      "team": "mafia",
+      "description": "One of the Mafia. Wakes at night with the other Mafia to choose a victim."
+    },
+    {
+      "id": "jim",
+      "name": "Jim",
+      "team": "mafia",
+      "description": "One of the Mafia. Wakes at night with the other Mafia to choose a victim."
+    },
+    {
+      "id": "faizal",
+      "name": "Faizal",
+      "team": "innocent",
+      "description": "Makes the town drunk \u2014 the night he acts, there is NO night phase (no kills, no night actions)."
+    },
+    {
+      "id": "silencer",
+      "name": "Silencer",
+      "team": "innocent",
+      "description": "Makes people shut up \u2014 the day he acts, there is NO day phase (no discussion/vote)."
+    },
+    {
+      "id": "meena_kumari",
+      "name": "Meena Kumari",
+      "team": "innocent",
+      "description": "Learns the number of Mafia remaining in the game."
+    },
+    {
+      "id": "jagga_jasoos",
+      "name": "Jagga Jasoos",
+      "team": "innocent",
+      "description": "Can investigate a player each night to identify whether they are Mafia."
+    },
+    {
+      "id": "inspector",
+      "name": "Inspector",
+      "team": "innocent",
+      "description": "Uses their authority (UP - Uttar Pradesh Police) to investigate players and uphold the law."
+    },
+    {
+      "id": "bheem",
+      "name": "Bheem",
+      "team": "innocent",
+      "description": "Once per game, can self-swap roles with a dead player, taking on their role for the rest of the game."
+    },
+    {
+      "id": "ganga",
+      "name": "Ganga",
+      "team": "innocent",
+      "description": "Picks 2 players each night \u2014 result is revealed via XNOR logic: same team = one signal, different teams = another."
+    },
+    {
+      "id": "bodyguard",
+      "name": "Bodyguard",
+      "team": "innocent",
+      "description": "Doctor role \u2014 protects one player each night from being killed."
+    },
+    {
+      "id": "raichand",
+      "name": "Raichand",
+      "team": "innocent",
+      "description": "Also a Doctor \u2014 protects one player each night from being killed."
+    },
+    {
+      "id": "samrat",
+      "name": "Samrat",
+      "team": "innocent",
+      "description": "Can reveal his identity publicly to cast a double vote during the day."
+    },
+    {
+      "id": "mohini",
+      "name": "Mohini",
+      "team": "innocent",
+      "description": "Wins with the Innocents if she survives to the final 4 players."
+    },
+    {
+      "id": "raju",
+      "name": "Raju",
+      "team": "innocent",
+      "description": "A townsperson with no special night action \u2014 relies on wits during the day."
+    },
+    {
+      "id": "ricky",
+      "name": "Ricky",
+      "team": "innocent",
+      "description": "Even after death, gets 2 votes that still count during the day vote."
+    },
+    {
+      "id": "sunehri",
+      "name": "Sunehri",
+      "team": "innocent",
+      "description": "A townsperson with no special night action \u2014 relies on wits during the day."
+    }
+  ]
+}

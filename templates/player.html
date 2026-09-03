@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Cosa Nostra — {{ player_name }}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-room-code="{{ room_code }}" data-player-token="{{ player_token }}" data-player-name="{{ player_name }}">
+<div class="wrap">
+  <div class="marquee">
+    <h1>La Cosa Nostra</h1>
+    <div class="sub">{{ player_name }} &middot; Area {{ room_code }}</div>
+  </div>
+
+  <div class="card" id="waiting-card">
+    <div class="waiting-pulse">
+      <div class="lantern">&#128479;</div>
+      <p style="font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold;">Waiting for the Don to assign identities...</p>
+      <p id="lobby-count" style="opacity:0.8;font-size:0.9rem; margin-top: 10px; text-transform: uppercase;"></p>
+    </div>
+  </div>
+
+  <div class="card" id="reveal-card" style="display:none; background: var(--noir-black); border-color: var(--brass);">
+    <div class="reveal-card">
+      <div style="font-size:0.85rem;text-transform:uppercase;letter-spacing:4px;opacity:0.8;color:var(--paper);">Your Identity</div>
+      <div class="role-name" id="role-name">-</div>
+      <span class="tag" id="role-tag"></span>
+      <p class="role-desc" id="role-desc"></p>
+    </div>
+  </div>
+
+  <div class="card" id="gameover-card" style="display:none; text-align:center;">
+    <h2 id="winner-heading" style="border:none; font-size: 2.2rem; margin-bottom: 0;">Case Closed</h2>
+    <p id="winner-sub" style="opacity:0.85; font-family: 'Playfair Display', serif; font-size: 1.1rem;"></p>
+  </div>
+
+  <div class="footer-note">Keep your identity secret. Trust no one.</div>
+</div>
+
+<script src="/static/player.js"></script>
+</body>
+</html>

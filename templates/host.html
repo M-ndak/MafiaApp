@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Cosa Nostra — Don Console</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="marquee">
+    <h1>La Cosa Nostra</h1>
+    <div class="sub">Don's Operations Console</div>
+  </div>
+
+  <div class="card" id="setup-card">
+    <h2>Establish Territory</h2>
+    <label for="max-players">Number of Associates</label>
+    <input type="number" id="max-players" min="2" max="30" value="8">
+    <label for="host-password">Clearance Code</label>
+    <input type="password" id="host-password" placeholder="Enter access code">
+    <button id="create-room-btn" style="margin-top:16px;">Create Room</button>
+    <div class="error-msg" id="setup-error"></div>
+    <p style="text-align:center;margin-top:18px;"><a href="/" style="color:var(--blood-red); font-weight:bold;">&larr; Back to headquarters</a></p>
+  </div>
+
+  <div class="card" id="room-card" style="display:none;">
+    <h2>Territory Established</h2>
+    <div class="code-display">
+      <div class="code" id="room-code">----</div>
+      <div>Wire this code to your associates, or have them scan the dossier below</div>
+    </div>
+    <div class="qr-box" id="qr-box"></div>
+
+    <h2>Associates Present (<span id="player-count">0</span>/<span id="max-players-label">0</span>)</h2>
+    <ul class="player-list" id="player-list"></ul>
+
+    <div id="pre-assign-section">
+      <h2>Select Suspects In Play</h2>
+      <div class="role-grid" id="role-grid"></div>
+      <div class="error-msg" id="role-error"></div>
+
+      <div class="row" style="margin-top:20px;">
+        <button id="save-roles-btn" class="secondary">Save Hitlist</button>
+        <button id="assign-btn" class="danger">Assign Roles &amp; Begin</button>
+      </div>
+      <div class="error-msg" id="assign-error"></div>
+      <p style="font-size:0.85rem;opacity:0.8;margin-top:15px;font-family:'Playfair Display', serif;">
+        Note: If you select fewer special roles than participants, the rest are dealt as plain Civilians.
+        House rules: when someone is whacked, they get 1 final message and 1 final vote before going to the mattresses.
+      </p>
+    </div>
+
+    <div id="roster-section" style="display:none;">
+      <h2>Syndicate Roster &mdash; Status Report</h2>
+      <div id="roster-list"></div>
+      <div class="row" style="margin-top:20px;">
+        <button id="mafia-wins-btn" class="danger">Mafia Wins</button>
+        <button id="innocents-win-btn" class="secondary">Civilians Win</button>
+      </div>
+      <div class="error-msg" id="roster-error"></div>
+    </div>
+  </div>
+
+  <div class="card" id="gameover-card" style="display:none; text-align:center;">
+    <h2 id="winner-heading" style="border:none; font-size: 2.5rem; margin-bottom: 0;">Case Closed</h2>
+    <p id="winner-sub" style="opacity:0.85; font-family: 'Playfair Display', serif; font-size: 1.2rem;"></p>
+    <button id="new-game-btn" style="margin-top:20px;">Start New Operation</button>
+  </div>
+
+  <div class="footer-note">La Cosa Nostra &middot; Secure Local Network Connection</div>
+</div>
+
+<script src="/static/qrcode_lib.js"></script>
+<script src="/static/host.js"></script>
+</body>
+</html>

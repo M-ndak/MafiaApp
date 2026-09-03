@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join La Cosa Nostra</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="marquee">
+    <h1>La Cosa Nostra</h1>
+    <div class="sub">Infiltrate the Syndicate</div>
+  </div>
+
+  <div class="card">
+    <h2>Enter Territory</h2>
+    <label for="room-code">Wire Code</label>
+    <input type="text" id="room-code" maxlength="4" style="text-transform:uppercase;" placeholder="ABCD">
+    <label for="player-name">Your Alias</label>
+    <input type="text" id="player-name" maxlength="24" placeholder="e.g. Jimmy 'The Rat'">
+    <button id="join-btn" style="margin-top:20px;">Enter Room</button>
+    <div class="error-msg" id="join-error"></div>
+    <p style="text-align:center;margin-top:18px;"><a href="/" style="color:var(--blood-red); font-weight:bold;">&larr; Back to headquarters</a></p>
+  </div>
+</div>
+
+<script src="/static/join.js"></script>
+</body>
+</html>

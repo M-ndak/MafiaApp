@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Cosa Nostra</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="marquee">
+    <h1>La Cosa Nostra</h1>
+    <div class="sub">Five Families. One City. Trust No One.</div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <h2 style="text-align:left;">The Briefing</h2>
+    <p style="margin-bottom:22px; font-weight: bold; font-family: 'Playfair Display', serif; font-size: 1.1rem;">Are you joining a syndicate already in operation, or establishing a new territory?</p>
+    <div class="row">
+      <button id="join-choice-btn">Join a Room</button>
+      <button id="host-choice-btn" class="secondary">Host a Room</button>
+    </div>
+  </div>
+
+  <div class="footer-note">La Cosa Nostra &middot; Secure Local Network Connection</div>
+</div>
+
+<script>
+  document.getElementById('join-choice-btn').addEventListener('click', () => {
+    window.location.href = '/join';
+  });
+  document.getElementById('host-choice-btn').addEventListener('click', () => {
+    window.location.href = '/host';
+  });
+</script>
+</body>
+</html>
